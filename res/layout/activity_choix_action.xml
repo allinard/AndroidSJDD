@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:scaleX="1.30"
+        android:scaleY="1.30"
+        android:src="@drawable/test4"  />
+	
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1"
+        android:gravity="left"
+        android:layout_centerInParent="true"
+        android:textSize="12pt"
+        android:textStyle="bold"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/select_mode"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/btnAller"
+        style="@style/btnStyleSeagull"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/textView"
+        android:text="@string/select_nav" />
+
+    <Button
+        android:id="@+id/btnOu"
+        style="@style/btnStyleSeagull"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/btnAller"
+        android:text="@string/select_localisation" />
+    </RelativeLayout>
+
+</LinearLayout>

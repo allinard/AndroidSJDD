@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_alignLeft="@+id/textView3"
+        android:text="@string/info_dest"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="8pt"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/salleDestination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView1"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="salleXX" 
+        android:textSize="10pt"
+        android:textStyle="bold"/>
+    
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/textView1"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:scaleX="1.30"
+        android:scaleY="1.30"
+        android:src="@drawable/test4" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/localisez"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="12pt"
+        android:textStyle="bold" />
+    
+
+    <Button
+        android:id="@+id/btnQRCode"
+        style="@style/btnStyleSeagull"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/textView3"
+        android:text="QRCode" />
+
+   <Button
+        android:id="@+id/btnSalle"
+        style="@style/btnStyleSeagull"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/btnQRCode"
+        android:text="@string/salle" />
+
+
+
+</RelativeLayout>
+
+</LinearLayout>
