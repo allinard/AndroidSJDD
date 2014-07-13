@@ -71,36 +71,15 @@ public class MainActivity extends Activity {
 		switch (item.getItemId()) {
 		case R.id.item1:
 			return true;
-		case R.id.item2:
-			return true;
-		case R.id.item3:
-			return true;
-		case R.id.item4:
-			return true;
 		case R.id.item5:
 			return true;
 		case R.id.item7:
-			c.locale = Locale.FRENCH;
-			getResources().updateConfiguration(c,
-					getResources().getDisplayMetrics());
-			return true;
-		case R.id.item8:
-			c.locale = Locale.ENGLISH;
-			getResources().updateConfiguration(c,
-					getResources().getDisplayMetrics());
-			return true;
-		case R.id.item9:
 			c.locale = new Locale("es");
 			getResources().updateConfiguration(c,
 					getResources().getDisplayMetrics());
 			return true;
-		case R.id.item10:
-			c.locale = new Locale("zh");
-			getResources().updateConfiguration(c,
-					getResources().getDisplayMetrics());
-			return true;
-		case R.id.item11:
-			c.locale = new Locale("pt");
+		case R.id.item8:
+			c.locale = new Locale("ct");
 			getResources().updateConfiguration(c,
 					getResources().getDisplayMetrics());
 			return true;

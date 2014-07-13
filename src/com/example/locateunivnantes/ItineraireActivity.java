@@ -74,11 +74,11 @@ public class ItineraireActivity extends Activity {
 
 		Bundle b = getIntent().getExtras();
 
-		//on récupère les salle de destination et d'origine
+		//on rï¿½cupï¿½re les salle de destination et d'origine
 		String destination = b.getString("destinationSalle");
 		String origine = b.getString("origineSalle");
 		
-		//on récupère l'image correspondant au batiment d'origine et de destination
+		//on rï¿½cupï¿½re l'image correspondant au batiment d'origine et de destination
 		imagePathDestination = choixImages(destination);
 		imagePathOrigine = choixImages(origine);
 
@@ -119,11 +119,11 @@ public class ItineraireActivity extends Activity {
 		if(null!=destination){
 			toast = "Vous souhaitez aller de ";
 			toast = toast.concat(destination);
-			toast = toast.concat(" à ");
+			toast = toast.concat(" ï¿½ ");
 			toast = toast.concat(origine);
 		}
 		else{
-			toast = "Vous êtes en salle ";
+			toast = "Vous ï¿½tes en salle ";
 			toast = toast.concat(origine);
 		}
 		
@@ -150,36 +150,15 @@ public class ItineraireActivity extends Activity {
 					MainActivity.class);
 			startActivity(intent1);
 			return true;
-		case R.id.item2:
-			return true;
-		case R.id.item3:
-			return true;
-		case R.id.item4:
-			return true;
 		case R.id.item5:
 			return true;
 		case R.id.item7:
-			c.locale = Locale.FRENCH;
-			getResources().updateConfiguration(c,
-					getResources().getDisplayMetrics());
-			return true;
-		case R.id.item8:
-			c.locale = Locale.ENGLISH;
-			getResources().updateConfiguration(c,
-					getResources().getDisplayMetrics());
-			return true;
-		case R.id.item9:
 			c.locale = new Locale("es");
 			getResources().updateConfiguration(c,
 					getResources().getDisplayMetrics());
 			return true;
-		case R.id.item10:
-			c.locale = new Locale("zh");
-			getResources().updateConfiguration(c,
-					getResources().getDisplayMetrics());
-			return true;
-		case R.id.item11:
-			c.locale = new Locale("pt");
+		case R.id.item8:
+			c.locale = new Locale("ct");
 			getResources().updateConfiguration(c,
 					getResources().getDisplayMetrics());
 			return true;

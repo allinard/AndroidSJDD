@@ -26,14 +26,12 @@ public class ChoixActionActivity extends Activity {
 	/**
 	 * Bouton aller vers (= choix navigation)
 	 */
-	Button buttonAllerVers;
+	Button buttonFillForm;
 
 	/**
 	 * Bouton Ou suis-je (= choix localisation)
 	 */
-	Button buttonOuSuisJe;
-
-	private boolean destinationPresente = false;
+	Button buttonConnectDatabase;
 
 	/**
 	 * 
@@ -45,25 +43,25 @@ public class ChoixActionActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		// Choix du layou activity_choix_action.xml
 		setContentView(R.layout.activity_choix_action);
-		// déclaration des listeners
-		addListenerOnButtonAllerVers();
-		addListenerOnButtonOuSuisJe();
+		// dï¿½claration des listeners
+		addListenerOnButtonFillForm();
+		addListenerOnButtonConnectDatabase();
 	}
 
 	/**
 	 * Listener sur le bouton aller vers
 	 */
-	private void addListenerOnButtonAllerVers() {
-		buttonAllerVers = (Button) findViewById(R.id.btnAller);
+	private void addListenerOnButtonFillForm() {
+		buttonFillForm = (Button) findViewById(R.id.btnFillForm);
 
-		buttonAllerVers.setOnClickListener(new OnClickListener() {
+		buttonFillForm.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
-				// Lorsque clique sur le bouton Aller vers, on démarre une
+				// Lorsque clique sur le bouton Aller vers, on dï¿½marre une
 				// nouvelle activity (ChoixDestination), pour choisir la
 				// destination voulue
 				Intent intent = new Intent(ChoixActionActivity.this,
-						ChoixDestinationActivity.class);
+						FillFormActivity.class);
 				startActivity(intent);
 			}
 
@@ -74,28 +72,17 @@ public class ChoixActionActivity extends Activity {
 	/**
 	 * 
 	 */
-	private void addListenerOnButtonOuSuisJe() {
-		buttonOuSuisJe = (Button) findViewById(R.id.btnOu);
+	private void addListenerOnButtonConnectDatabase() {
+		buttonConnectDatabase = (Button) findViewById(R.id.btnConnectDatabase);
 
-		buttonOuSuisJe.setOnClickListener(new OnClickListener() {
+		buttonConnectDatabase.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
-				// Lorsque clique sur le bouton ou suis je, on démarre une
-				// nouvelle activity (ChoixActionActivity), pour demarrer la
-				// localisation
-				Intent intent = new Intent(ChoixActionActivity.this,
-						ChoixOrigineActivity.class);
-				// on donne aussi comme information que l'on ne donne pas de
-				// destination (= ce n'est pas un calcul d'itinéraire)
-				intent.putExtra("destinationPresente", getDestinationPresente());
-				startActivity(intent);
+				Toast.makeText(
+						getApplicationContext(),"TodavÃ­a no implementado\nEncara no implementat", Toast.LENGTH_LONG).show();
 			}
 		});
 
-	}
-
-	private boolean getDestinationPresente() {
-		return destinationPresente;
 	}
 
 	@Override
@@ -116,38 +103,15 @@ public class ChoixActionActivity extends Activity {
 					MainActivity.class);
 			startActivity(intent1);
 			return true;
-		case R.id.item2:
-			return true;
-		case R.id.item3:
-			Toast.makeText(this,"Not implemented yet!", Toast.LENGTH_LONG ).show();
-			return true;
-		case R.id.item4:
-			Toast.makeText(this,"Not implemented yet!", Toast.LENGTH_LONG ).show();
-			return true;
 		case R.id.item5:
 			return true;
 		case R.id.item7:
-			c.locale = Locale.FRENCH;
-			getResources().updateConfiguration(c,
-					getResources().getDisplayMetrics());
-			return true;
-		case R.id.item8:
-			c.locale = Locale.ENGLISH;
-			getResources().updateConfiguration(c,
-					getResources().getDisplayMetrics());
-			return true;
-		case R.id.item9:
 			c.locale = new Locale("es");
 			getResources().updateConfiguration(c,
 					getResources().getDisplayMetrics());
 			return true;
-		case R.id.item10:
-			c.locale = new Locale("zh");
-			getResources().updateConfiguration(c,
-					getResources().getDisplayMetrics());
-			return true;
-		case R.id.item11:
-			c.locale = new Locale("pt");
+		case R.id.item8:
+			c.locale = new Locale("ct");
 			getResources().updateConfiguration(c,
 					getResources().getDisplayMetrics());
 			return true;

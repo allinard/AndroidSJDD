@@ -55,7 +55,7 @@ public class ChoixOrigineActivity extends Activity {
 		addListenerOnButtonQRCode();
 		addListenerOnButtonSalle();
 		
-		//on récupère l'info de la salle de destination depuis l'activity précédente
+		//on rï¿½cupï¿½re l'info de la salle de destination depuis l'activity prï¿½cï¿½dente
 		Bundle b = getIntent().getExtras();
 		setSalleSelected(b.getString("destinationSalle"));
 		salleDestination = (TextView) findViewById(R.id.salleDestination);
@@ -89,36 +89,15 @@ public class ChoixOrigineActivity extends Activity {
 					MainActivity.class);
 			startActivity(intent1);
 			return true;
-		case R.id.item2:
-			return true;
-		case R.id.item3:
-			return true;
-		case R.id.item4:
-			return true;
 		case R.id.item5:
 			return true;
 		case R.id.item7:
-			c.locale = Locale.FRENCH;
-			getResources().updateConfiguration(c,
-					getResources().getDisplayMetrics());
-			return true;
-		case R.id.item8:
-			c.locale = Locale.ENGLISH;
-			getResources().updateConfiguration(c,
-					getResources().getDisplayMetrics());
-			return true;
-		case R.id.item9:
 			c.locale = new Locale("es");
 			getResources().updateConfiguration(c,
 					getResources().getDisplayMetrics());
 			return true;
-		case R.id.item10:
-			c.locale = new Locale("zh");
-			getResources().updateConfiguration(c,
-					getResources().getDisplayMetrics());
-			return true;
-		case R.id.item11:
-			c.locale = new Locale("pt");
+		case R.id.item8:
+			c.locale = new Locale("ct");
 			getResources().updateConfiguration(c,
 					getResources().getDisplayMetrics());
 			return true;
@@ -143,7 +122,7 @@ public class ChoixOrigineActivity extends Activity {
 				//Quand on clique sur le bouton, on bascule sur l'activity ChoixOrigineQRCodeActivity pour flasher le code de la salle d'origine
 				Intent intent = new Intent(ChoixOrigineActivity.this,
 						ChoixOrigineQRCodeActivity.class);
-				//On spécifie a l'activity cible la salle de destination
+				//On spï¿½cifie a l'activity cible la salle de destination
 				intent.putExtra("destinationSalle", getSalleSelected());
 				startActivity(intent);
 			}
@@ -162,7 +141,7 @@ public class ChoixOrigineActivity extends Activity {
 				//Quand on clique sur le bouton, on bascule sur l'activity ChoixOrigineBatimentActivity pour choisir la salle d'origine dans une liste
 				Intent intent = new Intent(ChoixOrigineActivity.this,
 						ChoixOrigineBatimentActivity.class);
-				//On spécifie a l'activity cible la salle de destination
+				//On spï¿½cifie a l'activity cible la salle de destination
 				intent.putExtra("destinationSalle", getSalleSelected());
 				startActivity(intent);
 			}

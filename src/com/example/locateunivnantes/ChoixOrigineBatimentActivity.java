@@ -73,7 +73,7 @@ public class ChoixOrigineBatimentActivity extends Activity {
 		addListenerOnButtonOK();
 		addListenerOnListBatimentsSalles();
 
-		//on récupère la salle de destination depuis l'activity précedente
+		//on rï¿½cupï¿½re la salle de destination depuis l'activity prï¿½cedente
 		Bundle b = getIntent().getExtras();
 		setSalleDestination(b.getString("destinationSalle"));
 	}
@@ -98,36 +98,15 @@ public class ChoixOrigineBatimentActivity extends Activity {
 					MainActivity.class);
 			startActivity(intent1);
 			return true;
-		case R.id.item2:
-			return true;
-		case R.id.item3:
-			return true;
-		case R.id.item4:
-			return true;
 		case R.id.item5:
 			return true;
 		case R.id.item7:
-			c.locale = Locale.FRENCH;
-			getResources().updateConfiguration(c,
-					getResources().getDisplayMetrics());
-			return true;
-		case R.id.item8:
-			c.locale = Locale.ENGLISH;
-			getResources().updateConfiguration(c,
-					getResources().getDisplayMetrics());
-			return true;
-		case R.id.item9:
 			c.locale = new Locale("es");
 			getResources().updateConfiguration(c,
 					getResources().getDisplayMetrics());
 			return true;
-		case R.id.item10:
-			c.locale = new Locale("zh");
-			getResources().updateConfiguration(c,
-					getResources().getDisplayMetrics());
-			return true;
-		case R.id.item11:
-			c.locale = new Locale("pt");
+		case R.id.item8:
+			c.locale = new Locale("ct");
 			getResources().updateConfiguration(c,
 					getResources().getDisplayMetrics());
 			return true;
@@ -148,18 +127,18 @@ public class ChoixOrigineBatimentActivity extends Activity {
 		buttonOK.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
-				//si aucune salle sélectionnée, on affiche un toast disant qu'il faut sélectionner une salle !
+				//si aucune salle sï¿½lectionnï¿½e, on affiche un toast disant qu'il faut sï¿½lectionner une salle !
 				if (null == getSalleSelected()) {
 					Toast.makeText(getApplicationContext(),
-							"Vous devez sélectionner une salle!",
+							"Vous devez sï¿½lectionner une salle!",
 							Toast.LENGTH_LONG).show();
 				}
-				//sinon, on démarre une nouvelle activity (ItineraireActivity)
+				//sinon, on dï¿½marre une nouvelle activity (ItineraireActivity)
 				else {
 					Intent intent = new Intent(
 							ChoixOrigineBatimentActivity.this,
 							ItineraireActivity.class);
-					//on spécifie a l'activity cible la salle d'origine et de destination
+					//on spï¿½cifie a l'activity cible la salle d'origine et de destination
 					intent.putExtra("destinationSalle", getSalleDestination());
 					intent.putExtra("origineSalle", getSalleSelected());
 					startActivity(intent);

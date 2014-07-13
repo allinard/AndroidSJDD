@@ -1,19 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
   <item android:id="@+id/item1" android:title="@string/home"></item>
-  <item android:id="@+id/item2" android:titleCondensed="@string/prefs" android:title="@string/prefs_appli">
-    <menu>
-      <item android:id="@+id/item3" android:title="@string/couleurs"/>
-      <item android:id="@+id/item4" android:title="@string/version_handicap" android:checkable="true" android:checked="false"/>
-    </menu>
-  </item>
   <item android:id="@+id/item5" android:title="@string/langues">
       <menu>
-      <item android:id="@+id/item7" android:title="Français"/>
-      <item android:id="@+id/item8" android:title="English"/>
-      <item android:id="@+id/item9" android:title="Español"/>
-      <item android:id="@+id/item10" android:title="Português"/>
-      <item android:id="@+id/item11" android:title="中国的"/>
+      <item android:id="@+id/item7" android:title="Castellano"/>
+      <item android:id="@+id/item8" android:title="Català"/>
     </menu>
   </item>
   <item android:id="@+id/item6" android:title="@string/informations"/>
