@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+    
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
@@ -12,6 +16,7 @@
         android:text="Seleccion variables prediccion"
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
+    
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
@@ -33,7 +38,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="CheckBox" />
-
     </LinearLayout>
 
     <TextView
@@ -43,12 +47,6 @@
         android:text="Rellenar los campos siguientes:"
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
-    
-    
-    
-    
-    
-    
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
@@ -68,12 +66,9 @@
 
             <requestFocus />
         </EditText>
-
     </LinearLayout>
-    
-    
-    
-  	<LinearLayout
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
 
@@ -92,15 +87,1373 @@
 
             <requestFocus />
         </EditText>
-
     </LinearLayout>
-    
-    
-    
-    
-    
-    
-    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_fechaini"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fechaini" />
+
+        <EditText
+            android:id="@+id/fechaini"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_edad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edad" />
+
+        <EditText
+            android:id="@+id/edad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_codigopoblacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/codigopoblacion" />
+
+        <EditText
+            android:id="@+id/codigopoblacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_Enlesdarreres4setmanesambquinafreqüènciahatositduranteldiaenausènciaderefredat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Enlesdarreres4setmanesambquinafreqüènciahatositduranteldiaenausènciaderefredat" />
+
+        <EditText
+            android:id="@+id/Enlesdarreres4setmanesambquinafreqüènciahatositduranteldiaenausènciaderefredat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_Enlesdarreres4setmanesambquinafreqüèncialihacostatrespirarnopelnasperlanit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Enlesdarreres4setmanesambquinafreqüèncialihacostatrespirarnopelnasperlanit" />
+
+        <EditText
+            android:id="@+id/Enlesdarreres4setmanesambquinafreqüèncialihacostatrespirarnopelnasperlanit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_Altresmanifestacionsdatòpia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Altresmanifestacionsdatòpia" />
+
+        <EditText
+            android:id="@+id/Altresmanifestacionsdatòpia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_Edatdinicipatologiarespiratoriaanys"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Edatdinicipatologiarespiratoriaanys" />
+
+        <EditText
+            android:id="@+id/Edatdinicipatologiarespiratoriaanys"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_Antecedentspersonals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Antecedentspersonals" />
+
+        <EditText
+            android:id="@+id/Antecedentspersonals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_Enlesdarreres4setmanesquantesvegadeshaingresatenelhospitalacausadelasma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Enlesdarreres4setmanesquantesvegadeshaingresatenelhospitalacausadelasma" />
+
+        <EditText
+            android:id="@+id/Enlesdarreres4setmanesquantesvegadeshaingresatenelhospitalacausadelasma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_Símptomesintercrisisasma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Símptomesintercrisisasma" />
+
+        <EditText
+            android:id="@+id/Símptomesintercrisisasma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_CANControlAsmaNens07puntsboncontrol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/CANControlAsmaNens07puntsboncontrol" />
+
+        <EditText
+            android:id="@+id/CANControlAsmaNens07puntsboncontrol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_Enlesdarreres4setmanesAmbquinafreqüènciahatingutxiuletsosibilànciesdurantlanit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Enlesdarreres4setmanesAmbquinafreqüènciahatingutxiuletsosibilànciesdurantlanit" />
+
+        <EditText
+            android:id="@+id/Enlesdarreres4setmanesAmbquinafreqüènciahatingutxiuletsosibilànciesdurantlanit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_Desencadenants"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Desencadenants" />
+
+        <EditText
+            android:id="@+id/Desencadenants"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_Moquetescatifesendomicilihabitual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Moquetescatifesendomicilihabitual" />
+
+        <EditText
+            android:id="@+id/Moquetescatifesendomicilihabitual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_Visitesaurgències"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Visitesaurgències" />
+
+        <EditText
+            android:id="@+id/Visitesaurgències"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_Freqüènciacrisisasma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Freqüènciacrisisasma" />
+
+        <EditText
+            android:id="@+id/Freqüènciacrisisasma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_Ingresosperasma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Ingresosperasma" />
+
+        <EditText
+            android:id="@+id/Ingresosperasma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_Tractamentdebaseperlasma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Tractamentdebaseperlasma" />
+
+        <EditText
+            android:id="@+id/Tractamentdebaseperlasma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_asma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/asma" />
+
+        <EditText
+            android:id="@+id/asma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_rinitis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rinitis" />
+
+        <EditText
+            android:id="@+id/rinitis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_acaros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/acaros" />
+
+        <EditText
+            android:id="@+id/acaros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_alergia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/alergia" />
+
+        <EditText
+            android:id="@+id/alergia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_rinoconjuntivitis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rinoconjuntivitis" />
+
+        <EditText
+            android:id="@+id/rinoconjuntivitis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_budesonida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/budesonida" />
+
+        <EditText
+            android:id="@+id/budesonida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_fluticasona"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fluticasona" />
+
+        <EditText
+            android:id="@+id/fluticasona"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_ciclesonida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ciclesonida" />
+
+        <EditText
+            android:id="@+id/ciclesonida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_mometasona"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mometasona" />
+
+        <EditText
+            android:id="@+id/mometasona"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_montelukast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/montelukast" />
+
+        <EditText
+            android:id="@+id/montelukast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_singulair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/singulair" />
+
+        <EditText
+            android:id="@+id/singulair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_salmeterolfluticasona"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/salmeterolfluticasona" />
+
+        <EditText
+            android:id="@+id/salmeterolfluticasona"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_formoterolbudesonida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/formoterolbudesonida" />
+
+        <EditText
+            android:id="@+id/formoterolbudesonida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_omalizumab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/omalizumab" />
+
+        <EditText
+            android:id="@+id/omalizumab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_ocs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ocs" />
+
+        <EditText
+            android:id="@+id/ocs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_salbutamol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/salbutamol" />
+
+        <EditText
+            android:id="@+id/salbutamol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_Tossibilàncies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Tossibilàncies" />
+
+        <EditText
+            android:id="@+id/Tossibilàncies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_Símptomesderinoconjuntivitis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Símptomesderinoconjuntivitis" />
+
+        <EditText
+            android:id="@+id/Símptomesderinoconjuntivitis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_Fumadorsaldomicilihabitual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Fumadorsaldomicilihabitual" />
+
+        <EditText
+            android:id="@+id/Fumadorsaldomicilihabitual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_Medicacióderescat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Medicacióderescat" />
+
+        <EditText
+            android:id="@+id/Medicacióderescat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_Enlesdarreres4setmanesambquinafreqüèncialihacostatrespirarnopelnasduranteldia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Enlesdarreres4setmanesambquinafreqüèncialihacostatrespirarnopelnasduranteldia" />
+
+        <EditText
+            android:id="@+id/Enlesdarreres4setmanesambquinafreqüèncialihacostatrespirarnopelnasduranteldia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_Respostaabroncodilatadors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Respostaabroncodilatadors" />
+
+        <EditText
+            android:id="@+id/Respostaabroncodilatadors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_Dispneadiurna"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Dispneadiurna" />
+
+        <EditText
+            android:id="@+id/Dispneadiurna"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_Enlesdarreres4setmanesquanfaelnenexercicioesriuarialladestexiuletsotos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Enlesdarreres4setmanesquanfaelnenexercicioesriuarialladestexiuletsotos" />
+
+        <EditText
+            android:id="@+id/Enlesdarreres4setmanesquanfaelnenexercicioesriuarialladestexiuletsotos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_Estacionalitat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Estacionalitat" />
+
+        <EditText
+            android:id="@+id/Estacionalitat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_Enlesdarreres4setmanesquantsdieshavingutaurgènciesacausadelasma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Enlesdarreres4setmanesquantsdieshavingutaurgènciesacausadelasma" />
+
+        <EditText
+            android:id="@+id/Enlesdarreres4setmanesquantsdieshavingutaurgènciesacausadelasma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_evolucioPatologia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/evolucioPatologia" />
+
+        <EditText
+            android:id="@+id/evolucioPatologia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_Antecedentsfamiliarsdatòpia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Antecedentsfamiliarsdatòpia" />
+
+        <EditText
+            android:id="@+id/Antecedentsfamiliarsdatòpia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_ReaccionsalaITE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ReaccionsalaITE" />
+
+        <EditText
+            android:id="@+id/ReaccionsalaITE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_Enlesdarreres4setmanesambquinafreqüènciahatositdurantlanitenausènciaderefredat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Enlesdarreres4setmanesambquinafreqüènciahatositdurantlanitenausènciaderefredat" />
+
+        <EditText
+            android:id="@+id/Enlesdarreres4setmanesambquinafreqüènciahatositdurantlanitenausènciaderefredat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_Altresantecedentsfamiliarsdinterès"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Altresantecedentsfamiliarsdinterès" />
+
+        <EditText
+            android:id="@+id/Altresantecedentsfamiliarsdinterès"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_Dispneanocturna"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Dispneanocturna" />
+
+        <EditText
+            android:id="@+id/Dispneanocturna"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_Immunoteràpia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Immunoteràpia" />
+
+        <EditText
+            android:id="@+id/Immunoteràpia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_Crisisdasma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Crisisdasma" />
+
+        <EditText
+            android:id="@+id/Crisisdasma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_pis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pis" />
+
+        <EditText
+            android:id="@+id/pis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_humed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/humed" />
+
+        <EditText
+            android:id="@+id/humed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_casa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/casa" />
+
+        <EditText
+            android:id="@+id/casa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_ventilad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ventilad" />
+
+        <EditText
+            android:id="@+id/ventilad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_solead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/solead" />
+
+        <EditText
+            android:id="@+id/solead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_peluches"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/peluches" />
+
+        <EditText
+            android:id="@+id/peluches"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_Enlesdarreres4setmanesambquinafreqüènciahatingutxiuletsosibilànciesduranteldia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Enlesdarreres4setmanesambquinafreqüènciahatingutxiuletsosibilànciesduranteldia" />
+
+        <EditText
+            android:id="@+id/Enlesdarreres4setmanesambquinafreqüènciahatingutxiuletsosibilànciesduranteldia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_Animalsaldomicilihabitual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Animalsaldomicilihabitual" />
+
+        <EditText
+            android:id="@+id/Animalsaldomicilihabitual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_Tractamentdebaseperlarinitis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Tractamentdebaseperlarinitis" />
+
+        <EditText
+            android:id="@+id/Tractamentdebaseperlarinitis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_Faltesescolars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Faltesescolars" />
+
+        <EditText
+            android:id="@+id/Faltesescolars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_Símptomésambesforç"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Símptomésambesforç" />
+
+        <EditText
+            android:id="@+id/Símptomésambesforç"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_numurgenciasnecesitandoingres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/numurgenciasnecesitandoingres" />
+
+        <EditText
+            android:id="@+id/numurgenciasnecesitandoingres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/label_numurgenciasnecesitandoingresno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/numurgenciasnecesitandoingresno" />
+
+        <EditText
+            android:id="@+id/numurgenciasnecesitandoingresno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
     
     <Button
         android:id="@+id/btnLaunchClassification"
@@ -110,3 +1463,4 @@
         android:text="@string/launchClassification" />
 
 </LinearLayout>
+</ScrollView>
