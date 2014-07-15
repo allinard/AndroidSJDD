@@ -14,7 +14,11 @@
 
     <!-- For further use, eg conecting to hospital's database  -->
     <uses-permission android:name="android.permission.INTERNET" />
-
+    
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    
+    
     <application
         android:allowBackup="true"
         android:icon="@drawable/logo_hsjd_mini"

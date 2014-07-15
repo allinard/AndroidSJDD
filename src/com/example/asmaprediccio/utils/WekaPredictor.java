@@ -3,24 +3,24 @@ package com.example.asmaprediccio.utils;
 import java.util.ArrayList;
 import java.util.List;
 
-import weka.classifiers.bayes.NaiveBayes;
+import weka.classifiers.functions.MultilayerPerceptron;
 import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.SerializationHelper;
 import weka.core.converters.ConverterUtils.DataSource;
 
 public class WekaPredictor {
-	public static String PATH_TO_MODEL_FILE = "android.resource://com.example.asmaprediccio/assets/modelMPVisitesUrg.model";
+	public static String PATH_TO_MODEL_FILE = "modelMPVisitesUrg.model";
 
 	public static List<double[]> classify() {
-
+		
 		List<double[]> retour = new ArrayList<double[]>();
 
 		System.gc();
 
-		NaiveBayes rf;
+		MultilayerPerceptron rf;
 		try {
-			rf = (NaiveBayes) SerializationHelper.read(PATH_TO_MODEL_FILE);
+			rf = (MultilayerPerceptron) SerializationHelper.read("/sdcard/"+PATH_TO_MODEL_FILE);
 
 			DataSource source = new DataSource(
 					"/sdcard/outputReaded.arff");
@@ -46,4 +46,5 @@ public class WekaPredictor {
 		return retour;
 
 	}
+
 }

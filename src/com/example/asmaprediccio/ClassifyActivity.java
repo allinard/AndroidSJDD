@@ -1,8 +1,13 @@
 package com.example.asmaprediccio;
 
+import java.io.File;
+import java.io.InputStream;
+import java.util.List;
 import java.util.Locale;
 
 import com.example.asmaprediccio.R;
+import com.example.asmaprediccio.utils.ArffWriter;
+import com.example.asmaprediccio.utils.WekaPredictor;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -26,22 +31,108 @@ public class ClassifyActivity extends Activity {
 		// Choix du layou activity_choix_action.xml
 		setContentView(R.layout.activity_classify);
 
-		//Donde hacemos la clasificación
-		doClassification();
+		//Donde producemos un arff
+		doWriteArff();
+		
+		//Donde arrancamos el arff en el modelo
+		doClassify();
 	}
 
 
 
-	private void doClassification() {
-		// TODO Auto-generated method stub
+	private void doClassify() {
+		File f = new File("/sdcard/"+WekaPredictor.PATH_TO_MODEL_FILE);
+		if (!f.exists()) try {
+			InputStream is = getAssets().open(WekaPredictor.PATH_TO_MODEL_FILE);
+			int size = is.available();
+			byte[] buffer = new byte[size];
+			is.read(buffer);
+	    	is.close();
+	    	
+	    	java.io.FileOutputStream fos = new  java.io.FileOutputStream(f);
+	    	fos.write(buffer);
+	    	fos.close();
+		}
+		catch (Exception e)
+		{
+			e.printStackTrace();
+		}
 		
-		
-		/*
-		 * Bundle b = getIntent().getExtras();
-		setSalleDestination(b.getString("destinationSalle"));
-		 * 
-		 */
-		
+		List<double[]> machin = WekaPredictor.classify();
+	}
+
+
+
+	private void doWriteArff() {
+		Bundle b = getIntent().getExtras();
+		String arffLine = "";
+		arffLine += "\"" + b.getString("fechaini") + "\"," ;
+		arffLine += b.getString("edad") + "," ;
+		arffLine += b.getString("codigopoblacion") + "," ;
+		arffLine += b.getString("Enlesdarreres4setmanesambquinafreqüènciahatositduranteldiaenausènciaderefredat") + "," ;
+		arffLine += b.getString("Enlesdarreres4setmanesambquinafreqüèncialihacostatrespirarnopelnasperlanit") + "," ;
+		arffLine += b.getString("Altresmanifestacionsdatòpia") + "," ;
+		arffLine += b.getString("Edatdinicipatologiarespiratoriaanys") + "," ;
+		arffLine += b.getString("Antecedentspersonals") + "," ;
+		arffLine += b.getString("Enlesdarreres4setmanesquantesvegadeshaingresatenelhospitalacausadelasma") + "," ;
+		arffLine += b.getString("Símptomesintercrisisasma") + "," ;
+		arffLine += b.getString("CANControlAsmaNens07puntsboncontrol") + "," ;
+		arffLine += b.getString("Enlesdarreres4setmanesAmbquinafreqüènciahatingutxiuletsosibilànciesdurantlanit") + "," ;
+		arffLine += b.getString("Desencadenants") + "," ;
+		arffLine += b.getString("Moquetescatifesendomicilihabitual") + "," ;
+		arffLine += b.getString("Visitesaurgències") + "," ;
+		arffLine += b.getString("Freqüènciacrisisasma") + "," ;
+		arffLine += b.getString("Ingresosperasma") + "," ;
+		arffLine += b.getString("Tractamentdebaseperlasma") + "," ;
+		arffLine += b.getString("asma") + "," ;
+		arffLine += b.getString("rinitis") + "," ;
+		arffLine += b.getString("acaros") + "," ;
+		arffLine += b.getString("alergia") + "," ;
+		arffLine += b.getString("rinoconjuntivitis") + "," ;
+		arffLine += b.getString("budesonida") + "," ;
+		arffLine += b.getString("fluticasona") + "," ;
+		arffLine += b.getString("ciclesonida") + "," ;
+		arffLine += b.getString("mometasona") + "," ;
+		arffLine += b.getString("montelukast") + "," ;
+		arffLine += b.getString("singulair") + "," ;
+		arffLine += b.getString("salmeterolfluticasona") + "," ;
+		arffLine += b.getString("formoterolbudesonida") + "," ;
+		arffLine += b.getString("omalizumab") + "," ;
+		arffLine += b.getString("ocs") + "," ;
+		arffLine += b.getString("salbutamol") + "," ;
+		arffLine += b.getString("Tossibilàncies") + "," ;
+		arffLine += b.getString("Símptomesderinoconjuntivitis") + "," ;
+		arffLine += b.getString("Fumadorsaldomicilihabitual") + "," ;
+		arffLine += b.getString("Medicacióderescat") + "," ;
+		arffLine += b.getString("Enlesdarreres4setmanesambquinafreqüèncialihacostatrespirarnopelnasduranteldia") + "," ;
+		arffLine += b.getString("Respostaabroncodilatadors") + "," ;
+		arffLine += b.getString("Dispneadiurna") + "," ;
+		arffLine += b.getString("Enlesdarreres4setmanesquanfaelnenexercicioesriuarialladestexiuletsotos") + "," ;
+		arffLine += b.getString("Estacionalitat") + "," ;
+		arffLine += b.getString("Enlesdarreres4setmanesquantsdieshavingutaurgènciesacausadelasma") + "," ;
+		arffLine += b.getString("evolucioPatologia") + "," ;
+		arffLine += b.getString("Antecedentsfamiliarsdatòpia") + "," ;
+		arffLine += b.getString("ReaccionsalaITE") + "," ;
+		arffLine += b.getString("Enlesdarreres4setmanesambquinafreqüènciahatositdurantlanitenausènciaderefredat") + "," ;
+		arffLine += b.getString("Altresantecedentsfamiliarsdinterès") + "," ;
+		arffLine += b.getString("Dispneanocturna") + "," ;
+		arffLine += b.getString("Immunoteràpia") + "," ;
+		arffLine += b.getString("Crisisdasma") + "," ;
+		arffLine += b.getString("pis") + "," ;
+		arffLine += b.getString("humed") + "," ;
+		arffLine += b.getString("casa") + "," ;
+		arffLine += b.getString("ventilad") + "," ;
+		arffLine += b.getString("solead") + "," ;
+		arffLine += b.getString("peluches") + "," ;
+		arffLine += b.getString("Enlesdarreres4setmanesambquinafreqüènciahatingutxiuletsosibilànciesduranteldia") + "," ;
+		arffLine += b.getString("Animalsaldomicilihabitual") + "," ;
+		arffLine += b.getString("Tractamentdebaseperlarinitis") + "," ;
+		arffLine += b.getString("Faltesescolars") + "," ;
+		arffLine += b.getString("Símptomésambesforç") + "," ;
+		arffLine += b.getString("numurgenciasnecesitandoingres") + "," ;
+		arffLine += b.getString("numurgenciasnecesitandoingresno") + "," ;
+		arffLine = arffLine.replaceAll(",,", ",?,");
+		ArffWriter.writeOnSD(arffLine);
 	}
 
 

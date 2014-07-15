@@ -2,1465 +2,1315 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content" >
-    
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical" >
-
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Seleccion variables prediccion"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
-
-    
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <CheckBox
-            android:id="@+id/checkBox1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="CheckBox" />
-
-        <CheckBox
-            android:id="@+id/checkBox2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="CheckBox" />
-
-        <CheckBox
-            android:id="@+id/checkBox3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="CheckBox" />
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Rellenar los campos siguientes:"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5pt"
+            android:text="@string/select_var_predict"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <CheckBox
+                android:id="@+id/PredictVisitesaurg"
+                android:layout_width="72pt"
+                android:layout_height="match_parent"
+                android:text="@string/visitesaurg"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <CheckBox
+                android:id="@+id/PredictSímptomesintercrisisasma"
+                android:layout_width="72pt"
+                android:layout_height="match_parent"
+                android:text="@string/Símptomesintercrisisasma"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10pt"
+            android:text="@string/fill_camps"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/label_fechaini"
+                android:layout_width="72pt"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/fechaini" />
+
+            <EditText
+                android:id="@+id/fechaini"
+                android:layout_width="30pt"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20pt"
+                android:layout_marginLeft="5pt"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:inputType="date"
+                android:maxLength="10" >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/label_edad"
+                android:layout_width="72pt"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/edad" />
+
+            <EditText
+                android:id="@+id/edad"
+                android:layout_width="30pt"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20pt"
+                android:layout_marginLeft="5pt"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:maxLength="2" >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/label_codigopoblacion"
+                android:layout_width="72pt"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/codigopoblacion" />
+
+            <EditText
+                android:id="@+id/codigopoblacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20pt"
+                android:layout_marginLeft="5pt"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:maxLength="5" >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/label_Freqüènciacrisisasma"
+                android:layout_width="72pt"
+                android:layout_marginLeft="5pt"
+                android:layout_height="wrap_content"
+                android:text="@string/Freqüènciacrisisasma" />
+
+            <EditText
+                android:id="@+id/Freqüènciacrisisasma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:layout_marginRight="20pt"
+                android:layout_weight="1"
+                android:ems="10" 
+                android:inputType="number"
+                android:maxLength="2" >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+        
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/label_Edatdinicipatologiarespiratoriaanys"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Edatdinicipatologiarespiratoriaanys" />
+
+            <EditText
+                android:id="@+id/Edatdinicipatologiarespiratoriaanys"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5pt"
+                android:ems="10"
+               android:inputType="number"
+                android:maxLength="2"  >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+        
+        
+                <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/label_CANControlAsmaNens07puntsboncontrol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/CANControlAsmaNens07puntsboncontrol" />
+
+            <EditText
+                android:id="@+id/CANControlAsmaNens07puntsboncontrol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number"
+                android:maxLength="2"  >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+        
+                
+
+                            
+                                     <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/label_numurgenciasnecesitandoingres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/numurgenciasnecesitandoingres" />
+
+            <EditText
+                android:id="@+id/numurgenciasnecesitandoingres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                 android:layout_marginLeft="18pt"
+                android:ems="10"
+               android:inputType="number"
+                android:maxLength="2"  >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+        
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            
+            <TextView
+                android:id="@+id/label_numurgenciasnecesitandoingresno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/numurgenciasnecesitandoingresno" />
+
+            <EditText
+                android:id="@+id/numurgenciasnecesitandoingresno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                 android:layout_marginLeft="10pt"
+                android:ems="10"
+               android:inputType="number"
+                android:maxLength="2"  >
+
+                <requestFocus />
+            </EditText>
+            
+        </LinearLayout>
+                
+
+        
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/Altresmanifestacionsdatòpia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15pt"
+                android:text="@string/Altresmanifestacionsdatòpia"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/Antecedentspersonals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15pt"
+                android:text="@string/Antecedentspersonals"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/Símptomesintercrisisasma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15pt"
+                android:text="@string/Símptomesintercrisisasma"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+
+
+        
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/Desencadenants"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15pt"
+                android:text="@string/Desencadenants"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/Moquetescatifesendomicilihabitual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15pt"
+                android:text="@string/Moquetescatifesendomicilihabitual"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/Visitesaurgències"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15pt"
+                android:text="@string/Visitesaurgències"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/Ingresosperasma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15pt"
+                android:text="@string/Ingresosperasma"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/Tractamentdebaseperlasma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15pt"
+                android:text="@string/Tractamentdebaseperlasma"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+        
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/Tossibilàncies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15pt"
+                android:text="@string/Tossibilàncies"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/Símptomesderinoconjuntivitis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15pt"
+                android:text="@string/Símptomesderinoconjuntivitis"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/Fumadorsaldomicilihabitual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15pt"
+                android:text="@string/Fumadorsaldomicilihabitual"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/Medicacióderescat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15pt"
+                android:text="@string/Medicacióderescat"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+       
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/Respostaabroncodilatadors"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15pt"
+                android:text="@string/Respostaabroncodilatadors"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/Dispneadiurna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15pt"
+                android:text="@string/Dispneadiurna"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/Estacionalitat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15pt"
+                android:text="@string/Estacionalitat"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+       
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/evolucioPatologia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15pt"
+                android:text="@string/evolucioPatologia"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/Antecedentsfamiliarsdatòpia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15pt"
+                android:text="@string/Antecedentsfamiliarsdatòpia"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/ReaccionsalaITE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15pt"
+                android:text="@string/ReaccionsalaITE"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+       
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/Altresantecedentsfamiliarsdinterès"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15pt"
+                android:text="@string/Altresantecedentsfamiliarsdinterès"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/Dispneanocturna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15pt"
+                android:text="@string/Dispneanocturna"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/Immunoteràpia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15pt"
+                android:text="@string/Immunoteràpia"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/Crisisdasma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15pt"
+                android:text="@string/Crisisdasma"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+        
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/Animalsaldomicilihabitual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15pt"
+                android:text="@string/Animalsaldomicilihabitual"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/Tractamentdebaseperlarinitis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15pt"
+                android:text="@string/Tractamentdebaseperlarinitis"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/Faltesescolars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15pt"
+                android:text="@string/Faltesescolars"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/Símptomésambesforç"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15pt"
+                android:text="@string/Símptomésambesforç"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+        
+        
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:layout_marginTop="10pt"
+            android:text="@string/ResumPacient"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
 
-        <EditText
-            android:id="@+id/editText1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
+            <CheckBox
+                android:id="@+id/asma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15pt"
+                android:text="@string/asma"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
 
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+            <CheckBox
+                android:id="@+id/rinitis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15pt"
+                android:text="@string/rinitis"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
 
-        <TextView
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/acaros"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15pt"
+                android:text="@string/acaros"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/alergia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15pt"
+                android:text="@string/alergia"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/rinoconjuntivitis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15pt"
+                android:text="@string/rinoconjuntivitis"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        
+         <TextView
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView" />
-
-        <EditText
-            android:id="@+id/editText2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_fechaini"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/fechaini" />
-
-        <EditText
-            android:id="@+id/fechaini"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_edad"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/edad" />
-
-        <EditText
-            android:id="@+id/edad"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_codigopoblacion"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/codigopoblacion" />
-
-        <EditText
-            android:id="@+id/codigopoblacion"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_Enlesdarreres4setmanesambquinafreqüènciahatositduranteldiaenausènciaderefredat"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Enlesdarreres4setmanesambquinafreqüènciahatositduranteldiaenausènciaderefredat" />
-
-        <EditText
-            android:id="@+id/Enlesdarreres4setmanesambquinafreqüènciahatositduranteldiaenausènciaderefredat"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_Enlesdarreres4setmanesambquinafreqüèncialihacostatrespirarnopelnasperlanit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Enlesdarreres4setmanesambquinafreqüèncialihacostatrespirarnopelnasperlanit" />
-
-        <EditText
-            android:id="@+id/Enlesdarreres4setmanesambquinafreqüèncialihacostatrespirarnopelnasperlanit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_Altresmanifestacionsdatòpia"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Altresmanifestacionsdatòpia" />
-
-        <EditText
-            android:id="@+id/Altresmanifestacionsdatòpia"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_Edatdinicipatologiarespiratoriaanys"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Edatdinicipatologiarespiratoriaanys" />
-
-        <EditText
-            android:id="@+id/Edatdinicipatologiarespiratoriaanys"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_Antecedentspersonals"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Antecedentspersonals" />
-
-        <EditText
-            android:id="@+id/Antecedentspersonals"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_Enlesdarreres4setmanesquantesvegadeshaingresatenelhospitalacausadelasma"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Enlesdarreres4setmanesquantesvegadeshaingresatenelhospitalacausadelasma" />
-
-        <EditText
-            android:id="@+id/Enlesdarreres4setmanesquantesvegadeshaingresatenelhospitalacausadelasma"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_Símptomesintercrisisasma"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Símptomesintercrisisasma" />
-
-        <EditText
-            android:id="@+id/Símptomesintercrisisasma"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_CANControlAsmaNens07puntsboncontrol"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/CANControlAsmaNens07puntsboncontrol" />
-
-        <EditText
-            android:id="@+id/CANControlAsmaNens07puntsboncontrol"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_Enlesdarreres4setmanesAmbquinafreqüènciahatingutxiuletsosibilànciesdurantlanit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Enlesdarreres4setmanesAmbquinafreqüènciahatingutxiuletsosibilànciesdurantlanit" />
-
-        <EditText
-            android:id="@+id/Enlesdarreres4setmanesAmbquinafreqüènciahatingutxiuletsosibilànciesdurantlanit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_Desencadenants"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Desencadenants" />
-
-        <EditText
-            android:id="@+id/Desencadenants"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_Moquetescatifesendomicilihabitual"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Moquetescatifesendomicilihabitual" />
-
-        <EditText
-            android:id="@+id/Moquetescatifesendomicilihabitual"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_Visitesaurgències"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Visitesaurgències" />
-
-        <EditText
-            android:id="@+id/Visitesaurgències"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_Freqüènciacrisisasma"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Freqüènciacrisisasma" />
-
-        <EditText
-            android:id="@+id/Freqüènciacrisisasma"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_Ingresosperasma"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Ingresosperasma" />
-
-        <EditText
-            android:id="@+id/Ingresosperasma"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_Tractamentdebaseperlasma"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Tractamentdebaseperlasma" />
-
-        <EditText
-            android:id="@+id/Tractamentdebaseperlasma"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_asma"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/asma" />
-
-        <EditText
-            android:id="@+id/asma"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_rinitis"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/rinitis" />
-
-        <EditText
-            android:id="@+id/rinitis"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_acaros"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/acaros" />
-
-        <EditText
-            android:id="@+id/acaros"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_alergia"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/alergia" />
-
-        <EditText
-            android:id="@+id/alergia"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_rinoconjuntivitis"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/rinoconjuntivitis" />
-
-        <EditText
-            android:id="@+id/rinoconjuntivitis"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_budesonida"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/budesonida" />
-
-        <EditText
-            android:id="@+id/budesonida"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_fluticasona"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/fluticasona" />
-
-        <EditText
-            android:id="@+id/fluticasona"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_ciclesonida"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/ciclesonida" />
-
-        <EditText
-            android:id="@+id/ciclesonida"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_mometasona"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/mometasona" />
-
-        <EditText
-            android:id="@+id/mometasona"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_montelukast"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/montelukast" />
-
-        <EditText
-            android:id="@+id/montelukast"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_singulair"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/singulair" />
-
-        <EditText
-            android:id="@+id/singulair"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_salmeterolfluticasona"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/salmeterolfluticasona" />
-
-        <EditText
-            android:id="@+id/salmeterolfluticasona"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_formoterolbudesonida"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/formoterolbudesonida" />
-
-        <EditText
-            android:id="@+id/formoterolbudesonida"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_omalizumab"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/omalizumab" />
-
-        <EditText
-            android:id="@+id/omalizumab"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_ocs"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/ocs" />
-
-        <EditText
-            android:id="@+id/ocs"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_salbutamol"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/salbutamol" />
-
-        <EditText
-            android:id="@+id/salbutamol"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_Tossibilàncies"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Tossibilàncies" />
-
-        <EditText
-            android:id="@+id/Tossibilàncies"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_Símptomesderinoconjuntivitis"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Símptomesderinoconjuntivitis" />
-
-        <EditText
-            android:id="@+id/Símptomesderinoconjuntivitis"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_Fumadorsaldomicilihabitual"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Fumadorsaldomicilihabitual" />
-
-        <EditText
-            android:id="@+id/Fumadorsaldomicilihabitual"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_Medicacióderescat"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Medicacióderescat" />
-
-        <EditText
-            android:id="@+id/Medicacióderescat"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_Enlesdarreres4setmanesambquinafreqüèncialihacostatrespirarnopelnasduranteldia"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Enlesdarreres4setmanesambquinafreqüèncialihacostatrespirarnopelnasduranteldia" />
-
-        <EditText
-            android:id="@+id/Enlesdarreres4setmanesambquinafreqüèncialihacostatrespirarnopelnasduranteldia"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_Respostaabroncodilatadors"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Respostaabroncodilatadors" />
-
-        <EditText
-            android:id="@+id/Respostaabroncodilatadors"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_Dispneadiurna"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Dispneadiurna" />
-
-        <EditText
-            android:id="@+id/Dispneadiurna"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_Enlesdarreres4setmanesquanfaelnenexercicioesriuarialladestexiuletsotos"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Enlesdarreres4setmanesquanfaelnenexercicioesriuarialladestexiuletsotos" />
-
-        <EditText
-            android:id="@+id/Enlesdarreres4setmanesquanfaelnenexercicioesriuarialladestexiuletsotos"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_Estacionalitat"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Estacionalitat" />
-
-        <EditText
-            android:id="@+id/Estacionalitat"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_Enlesdarreres4setmanesquantsdieshavingutaurgènciesacausadelasma"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Enlesdarreres4setmanesquantsdieshavingutaurgènciesacausadelasma" />
-
-        <EditText
-            android:id="@+id/Enlesdarreres4setmanesquantsdieshavingutaurgènciesacausadelasma"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_evolucioPatologia"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/evolucioPatologia" />
-
-        <EditText
-            android:id="@+id/evolucioPatologia"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_Antecedentsfamiliarsdatòpia"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Antecedentsfamiliarsdatòpia" />
-
-        <EditText
-            android:id="@+id/Antecedentsfamiliarsdatòpia"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_ReaccionsalaITE"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/ReaccionsalaITE" />
-
-        <EditText
-            android:id="@+id/ReaccionsalaITE"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_Enlesdarreres4setmanesambquinafreqüènciahatositdurantlanitenausènciaderefredat"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Enlesdarreres4setmanesambquinafreqüènciahatositdurantlanitenausènciaderefredat" />
-
-        <EditText
-            android:id="@+id/Enlesdarreres4setmanesambquinafreqüènciahatositdurantlanitenausènciaderefredat"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_Altresantecedentsfamiliarsdinterès"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Altresantecedentsfamiliarsdinterès" />
-
-        <EditText
-            android:id="@+id/Altresantecedentsfamiliarsdinterès"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_Dispneanocturna"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Dispneanocturna" />
-
-        <EditText
-            android:id="@+id/Dispneanocturna"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_Immunoteràpia"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Immunoteràpia" />
-
-        <EditText
-            android:id="@+id/Immunoteràpia"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_Crisisdasma"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Crisisdasma" />
-
-        <EditText
-            android:id="@+id/Crisisdasma"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_pis"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/pis" />
-
-        <EditText
-            android:id="@+id/pis"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_humed"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/humed" />
-
-        <EditText
-            android:id="@+id/humed"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_casa"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/casa" />
-
-        <EditText
-            android:id="@+id/casa"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_ventilad"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/ventilad" />
-
-        <EditText
-            android:id="@+id/ventilad"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_solead"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/solead" />
-
-        <EditText
-            android:id="@+id/solead"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_peluches"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/peluches" />
-
-        <EditText
-            android:id="@+id/peluches"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_Enlesdarreres4setmanesambquinafreqüènciahatingutxiuletsosibilànciesduranteldia"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Enlesdarreres4setmanesambquinafreqüènciahatingutxiuletsosibilànciesduranteldia" />
-
-        <EditText
-            android:id="@+id/Enlesdarreres4setmanesambquinafreqüènciahatingutxiuletsosibilànciesduranteldia"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_Animalsaldomicilihabitual"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Animalsaldomicilihabitual" />
-
-        <EditText
-            android:id="@+id/Animalsaldomicilihabitual"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_Tractamentdebaseperlarinitis"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Tractamentdebaseperlarinitis" />
-
-        <EditText
-            android:id="@+id/Tractamentdebaseperlarinitis"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_Faltesescolars"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Faltesescolars" />
-
-        <EditText
-            android:id="@+id/Faltesescolars"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_Símptomésambesforç"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Símptomésambesforç" />
-
-        <EditText
-            android:id="@+id/Símptomésambesforç"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_numurgenciasnecesitandoingres"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/numurgenciasnecesitandoingres" />
-
-        <EditText
-            android:id="@+id/numurgenciasnecesitandoingres"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/label_numurgenciasnecesitandoingresno"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/numurgenciasnecesitandoingresno" />
-
-        <EditText
-            android:id="@+id/numurgenciasnecesitandoingresno"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
+            android:layout_marginTop="10pt"
+            android:text="@string/TractamentsEmprats"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+         
+         
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/budesonida"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15pt"
+                android:text="@string/budesonida"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/fluticasona"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15pt"
+                android:text="@string/fluticasona"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/ciclesonida"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15pt"
+                android:text="@string/ciclesonida"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/mometasona"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15pt"
+                android:text="@string/mometasona"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/montelukast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15pt"
+                android:text="@string/montelukast"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/singulair"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15pt"
+                android:text="@string/singulair"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/salmeterolfluticasona"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15pt"
+                android:text="@string/salmeterolfluticasona"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/formoterolbudesonida"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15pt"
+                android:text="@string/formoterolbudesonida"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/omalizumab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15pt"
+                android:text="@string/omalizumab"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/ocs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15pt"
+                android:text="@string/ocs"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/salbutamol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15pt"
+                android:text="@string/salbutamol"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        
+        
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10pt"
+            android:text="@string/AltresAntecedentsAmbientales"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/pis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15pt"
+                android:text="@string/pis"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/humed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15pt"
+                android:text="@string/humed"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/casa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15pt"
+                android:text="@string/casa"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/ventilad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15pt"
+                android:text="@string/ventilad"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/solead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15pt"
+                android:text="@string/solead"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/peluches"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15pt"
+                android:text="@string/peluches"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+       
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/label_Enlesdarreres4setmanesambquinafreqüènciahatositduranteldiaenausènciaderefredat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Enlesdarreres4setmanesambquinafreqüènciahatositduranteldiaenausènciaderefredat" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/Enlesdarreres4setmanesambquinafreqüènciahatositduranteldiaenausènciaderefredat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40pt"
+                android:layout_marginRight="40pt"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number"
+                android:maxLength="2"  >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+        
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/label_Enlesdarreres4setmanesambquinafreqüèncialihacostatrespirarnopelnasperlanit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Enlesdarreres4setmanesambquinafreqüèncialihacostatrespirarnopelnasperlanit" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/Enlesdarreres4setmanesambquinafreqüèncialihacostatrespirarnopelnasperlanit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40pt"
+                android:layout_marginRight="40pt"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number"
+                android:maxLength="2"  >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+        
+        
+                <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/label_Enlesdarreres4setmanesquantesvegadeshaingresatenelhospitalacausadelasma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Enlesdarreres4setmanesquantesvegadeshaingresatenelhospitalacausadelasma" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/Enlesdarreres4setmanesquantesvegadeshaingresatenelhospitalacausadelasma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40pt"
+                android:layout_marginRight="40pt"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number"
+                android:maxLength="2" >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+        
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/label_Enlesdarreres4setmanesAmbquinafreqüènciahatingutxiuletsosibilànciesdurantlanit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Enlesdarreres4setmanesAmbquinafreqüènciahatingutxiuletsosibilànciesdurantlanit" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/Enlesdarreres4setmanesAmbquinafreqüènciahatingutxiuletsosibilànciesdurantlanit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40pt"
+                android:layout_marginRight="40pt"
+                android:layout_weight="1"
+                android:ems="10" 
+                android:inputType="number"
+                android:maxLength="2" >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+        
+        
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/label_Enlesdarreres4setmanesambquinafreqüèncialihacostatrespirarnopelnasduranteldia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Enlesdarreres4setmanesambquinafreqüèncialihacostatrespirarnopelnasduranteldia" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/Enlesdarreres4setmanesambquinafreqüèncialihacostatrespirarnopelnasduranteldia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40pt"
+                android:layout_marginRight="40pt"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number"
+                android:maxLength="2"  >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+        
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/label_Enlesdarreres4setmanesquanfaelnenexercicioesriuarialladestexiuletsotos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Enlesdarreres4setmanesquanfaelnenexercicioesriuarialladestexiuletsotos" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/Enlesdarreres4setmanesquanfaelnenexercicioesriuarialladestexiuletsotos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40pt"
+                android:layout_marginRight="40pt"
+                android:layout_weight="1"
+                android:ems="10" 
+                android:inputType="number"
+                android:maxLength="2" >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+        
+        
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/label_Enlesdarreres4setmanesquantsdieshavingutaurgènciesacausadelasma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Enlesdarreres4setmanesquantsdieshavingutaurgènciesacausadelasma" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/Enlesdarreres4setmanesquantsdieshavingutaurgènciesacausadelasma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40pt"
+                android:layout_marginRight="40pt"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number"
+                android:maxLength="2"  >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+        
+        
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/label_Enlesdarreres4setmanesambquinafreqüènciahatositdurantlanitenausènciaderefredat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Enlesdarreres4setmanesambquinafreqüènciahatositdurantlanitenausènciaderefredat" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/Enlesdarreres4setmanesambquinafreqüènciahatositdurantlanitenausènciaderefredat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40pt"
+                android:layout_marginRight="40pt"
+                android:layout_weight="1"
+                android:ems="10" 
+                android:inputType="number"
+                android:maxLength="2" >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+        
+        
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/label_Enlesdarreres4setmanesambquinafreqüènciahatingutxiuletsosibilànciesduranteldia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Enlesdarreres4setmanesambquinafreqüènciahatingutxiuletsosibilànciesduranteldia" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/Enlesdarreres4setmanesambquinafreqüènciahatingutxiuletsosibilànciesduranteldia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40pt"
+                android:layout_marginRight="40pt"
+                android:layout_weight="1"
+                android:ems="10" 
+                android:inputType="number"
+                android:maxLength="2" >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+        
+
+        <Button
+            android:id="@+id/btnLaunchClassification"
+            style="@style/btnStyleSeagull"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/launchClassification" />
     </LinearLayout>
 
-    
-    <Button
-        android:id="@+id/btnLaunchClassification"
-        style="@style/btnStyleSeagull"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/launchClassification" />
-
-</LinearLayout>
 </ScrollView>
